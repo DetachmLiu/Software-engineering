@@ -108,8 +108,9 @@ int main() {
     for (int i = 0; i < 10000; i++)
         res = bfs(start, size);
     auto et = clock();
-
-    printf("Run bfs with %lf ms!\n", static_cast<double>(et - st));
+    
+    double time = static_cast<double>(et) - static_cast<double>(st);
+    printf("Run bfs with %lf ms!\n", time);
 
     if (res == -1)
         printf("No solution");
