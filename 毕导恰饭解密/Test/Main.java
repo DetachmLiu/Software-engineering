@@ -17,9 +17,7 @@ public class Main {
      */
     private static void decodeText(List<String> article) throws IOException {
         PrintWriter writer = new PrintWriter("decode.txt");
-        System.out.println((int)'A' + " " + (int)'Z');
         // 遍历破译 + 输出
-        System.out.println((char)('A' + 24));
         for (String line : article) {
             StringBuilder sb = new StringBuilder();
             for (char ch : line.toCharArray()) {
